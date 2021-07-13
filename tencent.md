@@ -67,10 +67,10 @@ list是双向链表吧，常数时间从容器任何位置插入和移除元素�
 
 ### C++中的四种cast
 
-const_cast: 加上或者删除const修饰
-dynamic_cast: 有检查的多态转换
-static_cast: 类似C中的强制类型转换，主要是多了一些检查
-reinterpret_cast：通过重新解释底层位模式在类型间转换，与static_cast的区别就是，对于int(2)转换到float(2)，因为两者的实际位存储不一样，所以static_cast是会将其内部的位进行修改的，而reinterpre_cast则不会编译成任何CPU指令，只是指示编译器将其看作新类型，所以int(2)还是以整型存储
+- const_cast: 加上或者删除const修饰
+- dynamic_cast: 有检查的多态转换
+- static_cast: 类似C中的强制类型转换，主要是多了一些检查
+- reinterpret_cast：通过重新解释底层位模式在类型间转换，与static_cast的区别就是，对于int(2)转换到float(2)，因为两者的实际位存储不一样，所以static_cast是会将其内部的位进行修改的，而reinterpre_cast则不会编译成任何CPU指令，只是指示编译器将其看作新类型，所以int(2)还是以整型存储
 
 ### 深拷贝与浅拷贝区别是什么？
 
